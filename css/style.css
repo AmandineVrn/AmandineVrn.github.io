@@ -164,7 +164,8 @@ main{
     border: 1px solid transparent;
     width: 100%;
     /* height: calc(100vh - 100px); */
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
+    max-height: fit-content;
     flex-direction: column;
     align-items: center;
     scroll-margin-top: 60px;
@@ -621,6 +622,7 @@ section{
     border: 3px solid transparent;
     flex-direction: row;
     scroll-margin-top: 100px;
+    height: calc(100vh - 80px);
 }
 
 #infos_portfolio{
@@ -686,7 +688,8 @@ section{
     flex-direction: column;
     align-items: center;
     /* scroll-margin-top: 80px; */
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
+    max-height: fit-content;
     width: 100%;
     /* background-color: blue; */
 }
