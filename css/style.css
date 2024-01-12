@@ -307,6 +307,7 @@ main{
 #travaux .sous_menu{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .sous_menu.open {
