@@ -32,8 +32,12 @@ body{
     width: 220px;
 } */
 
+
 nav{
     text-transform: uppercase;
+    width: 500px;
+
+    /* border: 1px solid red; */
 
 }
 
@@ -41,10 +45,12 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 150%;
+    /* width: 100%; */
     border: 1px solid transparent;
     margin: 0;
     padding: 0;
+    /* border: 1px solid yellow; */
+    gap: 10px;
 }
 
 nav ul li{
@@ -92,6 +98,7 @@ main{
     border: 1px solid transparent;
     /* width: 90%; */
     /* margin: 2vh 0 0 0; */
+    margin: 0;
 
 }
 
@@ -578,7 +585,7 @@ header{
 }
 
 #amandine-verneau{
-    -webkit-text-stroke: var(--color60) 0.5px;
+    /* -webkit-text-stroke: var(--color60) 0.5px; */
 }
 
 
@@ -647,8 +654,11 @@ section{
     height: max-content;
     /* border: 1px solid transparent; */
     /* -webkit-text-stroke: transparent 3px; */
-    -webkit-text-stroke: var(--color60) 2px;
+    /* -webkit-text-stroke: var(--color60) 2px; */
+    transition: 3000ms ease-out;
+    font-weight: 600;
 }
+
 
 #infos_portfolio span#AV:hover{
     color: var(--color10);
@@ -691,7 +701,7 @@ section{
     /* scroll-margin-top: 80px; */
     min-height: calc(100vh - 100px);
     max-height: fit-content;
-    width: 100%;
+    /* width: 100%; */
     /* background-color: blue; */
 }
 
