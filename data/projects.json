@@ -1,0 +1,85 @@
+{
+    "projects": {
+        "dccomicsseries": {
+            "id": 1,
+            "title": "DC Comics Series",
+            "image": "DCCS",
+            "link": "https://dccomicsseries.netlify.app/",
+            "stack": ["HTML"],
+            "year": 2021,
+            "github": ""
+        },
+        "moviedb": {
+            "id": 2,
+            "title": "Movie DB",
+            "image": "mdb",
+            "link": "https://github.com/AmandineVrn/movie_db",
+            "stack": ["HTML", "PHP", "MySQL"],
+            "year": 2022,
+            "github": "https://github.com/AmandineVrn/movie_db"
+        },
+        "SAE105": {
+            "id": 3,
+            "title": "SAE105",
+            "image": "sae105",
+            "link": "http://mmi22g14.sae105.ovh/",
+            "stack": ["HTML", "CSS", "JavaScript"],
+            "year": 2023,
+            "github": ""
+        },
+        "to_do_list": {
+            "id": 4,
+            "title": "To Do List",
+            "image": "to_do_list",
+            "link": "https://amandinevrn.github.io/to_do_list/",
+            "stack": ["HTML", "JavaScript"],
+            "year": 2023,
+            "github": ""
+        },
+        "sae203": {
+            "id": 5,
+            "title": "SAE203",
+            "image": "sae203",
+            "link": "http://mmi22g14.sae203.ovh/",
+            "stack": ["HTML", "PHP", "MySQL"],
+            "year": 2023,
+            "github": ""
+        },
+        "watches_website": {
+            "id": 6,
+            "title": "Watches Website",
+            "image": "figma_watches",
+            "link": "https://www.figma.com/proto/rvcytoS1iUxMMSxmpCWD2w/Watches-Website?type=design&node-id=22-19&t=E7xb0wSq8K2EL0Un-1&scaling=scale-down-width&page-id=13%3A427&starting-point-node-id=22%3A19",
+            "stack": ["Figma"],
+            "year": 2023,
+            "github": ""
+        },
+        "froggy": {
+            "id": 7,
+            "title": "Froggy",
+            "image": "froggy",
+            "link": "https://memory-froggy.netlify.app",
+            "stack": ["Vuejs", "sass"],
+            "year": 2024,
+            "github": ""
+        },
+        "mandina_posters": {
+            "id": 8,
+            "title": "Mandina Posters",
+            "image": "mandina-posters",
+            "link": "https://mandina-posters.com",
+            "stack": ["Vuejs", "sass"],
+            "year": 2024,
+            "github": ""
+        },
+        "shine_crea_studio": {
+            "id": 9,
+            "title": "Shine Créa Studio",
+            "image": "shinecrea-logo",
+            "link": "https://shinecreastudio.netlify.app/",
+            "stack": ["HTML", "sass"],
+            "year": 2024,
+            "figma": ""
+        }
+    }
+}
