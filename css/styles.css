@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   color: #232323;
+  scroll-behavior: smooth;
 }
 body h1 {
   font-size: 2.5rem;
@@ -40,8 +41,27 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
+  width: 100%;
   height: max-content;
+}
+main .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5% 1.3% 0.5% 1.3%;
+  border-radius: 20px;
+  background-color: #bb2649;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 300ms ease-out;
+}
+main .btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  display: flex;
+  transition: all 300ms ease-out;
 }
 
 header {
@@ -96,6 +116,23 @@ header nav ul li {
   border-radius: 100%;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+  color: #fff;
+  background-color: #232323;
+}
+.about .btn {
+  margin: 1%;
+}
+.about p {
+  width: 50vw;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -134,7 +171,7 @@ header nav ul li {
 }
 .projects__content .btn-stack .stack i {
   color: #bb2649;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   transition: all 300ms ease-out;
 }
 .projects__content .btn-stack .stack:hover, .projects__content .btn-stack .stack:focus {
@@ -181,7 +218,7 @@ header nav ul li {
   margin: 0;
 }
 .projects__content__cards .card__content i {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   letter-spacing: 10px;
 }
 .projects__content__cards .card__content .row {
@@ -288,7 +325,7 @@ header nav ul li {
   border-radius: 3px;
 }
 .contact .btn-stack .stack i {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   color: #bb2649;
 }
 .contact .btn-stack .stack:hover, .contact .btn-stack .stack:focus {

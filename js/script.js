@@ -156,3 +156,10 @@ faders.forEach(fader => {
 
 
 /* Fin Animation */
+
+
+document.getElementById('contactButton').addEventListener('click', function() {
+    const contactSection = document.getElementById('contact'); // Assurez-vous que cette section existe
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  });
+  
