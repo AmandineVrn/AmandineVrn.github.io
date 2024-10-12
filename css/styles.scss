@@ -182,6 +182,8 @@ header{
 
     img{
         border-radius: 100%;
+        height: 30vw;
+        width: 30vw;
     }
 }
 
@@ -199,6 +201,9 @@ header{
     .btn{
         margin: 1%;
 
+        &:hover{
+            border: 1px solid $dark;
+        }
         
     }
 
