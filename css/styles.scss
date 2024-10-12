@@ -19,7 +19,7 @@ $dark-grey: #808080;
 $light-grey: #D1D1D1;
 $dark: #232323;
 $cta: #bb2649;
-$light: #fefefe;
+$light: #fff;
 
 // fin Variables //
 
@@ -196,38 +196,35 @@ header{
             .stack{
                 width: 50px;
                 height: 50px;
-                background-color: #fff;
-                border: 1px solid $light-grey;
-                color: $light-grey;
+                background-color: $light;
+                border: 1px solid $cta;
+                color: $cta;
                 border-radius: 3px;
                 transition: all 300ms ease-out;
 
-                &:hover{
-                    cursor: pointer;
-                    border-color: $dark-grey;
+                i{
+                    color: $cta;
+                    font-size: 1.7em;
                     transition: all 300ms ease-out;
-                    color: $dark;
+                }
+
+                &:hover, &:focus{
+                    cursor: pointer;
+                    border-color: $light;
+                    transition: all 300ms ease-out;
+                    color: $light;
+                    background-color: $cta;
                     // transform: scale(1.01);
 
                     i{
-                        color: $dark-grey;
+                        color: $light;
                         transition: all 300ms ease-out;
                     }
                 }
 
-                &:focus{
-                    color: $cta;
-                    border-color: $cta;
-                    
-                    i{
-                        color: $cta;
-                    }
-                }
+                
 
-                i{
-                    font-size: 1.7em;
-                    color: $light-grey;
-                }
+                
             }
         }
         
@@ -372,35 +369,33 @@ header{
             width: 50px;
             height: 50px;
             background-color: #fff;
-            border: 1px solid $light-grey;
-            color: $light-grey;
+            border: 1px solid $cta;
+            color: $cta;
             border-radius: 3px;
-
-            &:hover{
-                cursor: pointer;
-                border-color: $dark-grey;
-                transition: all 200ms ease-out;
-                color: $dark;
-                // transform: scale(1.01);
-
-                i{
-                    color: $dark-grey;
-                }
-            }
-
-            &:focus{
-                color: $cta;
-                border-color: $cta;
-                
-                i{
-                    color: $cta;
-                }
-            }
 
             i{
                 font-size: 1.7em;
-                color: $light-grey;
+                color: $cta;
             }
+
+            &:hover, &:focus{
+                cursor: pointer;
+                border-color: $light;
+                transition: all 200ms ease-out;
+                color: $cta;
+                background-color: $cta;
+                // transform: scale(1.01);
+
+                i{
+                    color: $light;
+                }
+
+                
+            }
+
+            
+
+            
         }
     }
     

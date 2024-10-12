@@ -127,31 +127,26 @@ header nav ul li {
   width: 50px;
   height: 50px;
   background-color: #fff;
-  border: 1px solid #D1D1D1;
-  color: #D1D1D1;
+  border: 1px solid #bb2649;
+  color: #bb2649;
   border-radius: 3px;
   transition: all 300ms ease-out;
 }
-.projects__content .btn-stack .stack:hover {
-  cursor: pointer;
-  border-color: #808080;
-  transition: all 300ms ease-out;
-  color: #232323;
-}
-.projects__content .btn-stack .stack:hover i {
-  color: #808080;
-  transition: all 300ms ease-out;
-}
-.projects__content .btn-stack .stack:focus {
-  color: #bb2649;
-  border-color: #bb2649;
-}
-.projects__content .btn-stack .stack:focus i {
-  color: #bb2649;
-}
 .projects__content .btn-stack .stack i {
+  color: #bb2649;
   font-size: 1.7em;
-  color: #D1D1D1;
+  transition: all 300ms ease-out;
+}
+.projects__content .btn-stack .stack:hover, .projects__content .btn-stack .stack:focus {
+  cursor: pointer;
+  border-color: #fff;
+  transition: all 300ms ease-out;
+  color: #fff;
+  background-color: #bb2649;
+}
+.projects__content .btn-stack .stack:hover i, .projects__content .btn-stack .stack:focus i {
+  color: #fff;
+  transition: all 300ms ease-out;
 }
 .projects__content__cards {
   z-index: 1;
@@ -288,29 +283,23 @@ header nav ul li {
   width: 50px;
   height: 50px;
   background-color: #fff;
-  border: 1px solid #D1D1D1;
-  color: #D1D1D1;
+  border: 1px solid #bb2649;
+  color: #bb2649;
   border-radius: 3px;
-}
-.contact .btn-stack .stack:hover {
-  cursor: pointer;
-  border-color: #808080;
-  transition: all 200ms ease-out;
-  color: #232323;
-}
-.contact .btn-stack .stack:hover i {
-  color: #808080;
-}
-.contact .btn-stack .stack:focus {
-  color: #bb2649;
-  border-color: #bb2649;
-}
-.contact .btn-stack .stack:focus i {
-  color: #bb2649;
 }
 .contact .btn-stack .stack i {
   font-size: 1.7em;
-  color: #D1D1D1;
+  color: #bb2649;
+}
+.contact .btn-stack .stack:hover, .contact .btn-stack .stack:focus {
+  cursor: pointer;
+  border-color: #fff;
+  transition: all 200ms ease-out;
+  color: #bb2649;
+  background-color: #bb2649;
+}
+.contact .btn-stack .stack:hover i, .contact .btn-stack .stack:focus i {
+  color: #fff;
 }
 .contact i {
   color: #fff;
