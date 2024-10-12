@@ -132,7 +132,6 @@ fetch('data/projects.json')
 
 
 /* Animation */
-
 // Sélectionner les éléments à animer
 const faders = document.querySelectorAll('.fade-in');
 
@@ -143,9 +142,12 @@ const appearOptions = {
 
 const appearOnScroll = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add('visible');
-    observer.unobserve(entry.target); // Désactive l'observation une fois l'animation jouée
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      // Retirer la classe visible pour le fade-out
+      entry.target.classList.remove('visible');
+    }
   });
 }, appearOptions);
 
@@ -153,6 +155,7 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
+
 
 
 /* Fin Animation */
