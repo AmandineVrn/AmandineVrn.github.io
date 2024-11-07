@@ -39,7 +39,8 @@ fetch('data/projects.json')
             "MySQL": '<i class="fa-solid fa-database"></i>',
             "Vuejs": '<i class="fa-brands fa-vuejs"></i>',
             "sass": '<i class="fa-brands fa-sass"></i>',
-            "Figma": '<i class="fa-brands fa-figma"></i>'
+            "Figma": '<i class="fa-brands fa-figma"></i>',
+            "Nuxt": '<img src="Images/icons/nuxt-icon-black.svg" alt="Nuxt.js" class="icon-nuxt">',
         };
         const sortedProjects = projects.sort((a, b) => b.id - a.id);
         const cardContainer = document.querySelector('.projects__content__cards');
@@ -165,4 +166,16 @@ document.getElementById('contactButton').addEventListener('click', function() {
     const contactSection = document.getElementById('contact'); // Assurez-vous que cette section existe
     contactSection.scrollIntoView({ behavior: 'smooth' });
   });
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+
+    menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+});
+
   

@@ -68,7 +68,7 @@
             "title": "Mandina Posters",
             "image": "mandina-posters",
             "link": "https://mandina-posters.com",
-            "stack": ["Vuejs", "sass"],
+            "stack": ["Nuxt","Vuejs", "sass"],
             "year": 2024,
             "github": ""
         },
