@@ -265,6 +265,24 @@ header {
     color: $light;
     background-color: $dark;
 
+    @keyframes scale-pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      .attract-animation {
+        display: inline-block; // ou block selon le besoin
+        animation: scale-pulse 1.5s ease-in-out infinite;
+      }
+      
+
     .btn{
         margin: 1%;
 
@@ -464,7 +482,8 @@ header {
                     "figma_watches": "figma_watches.png",
                     "froggy": "froggy.png",
                     "mandina-posters": "mandina-posters.png",
-                    "shinecrea-logo": "shinecrea-logo.svg"
+                    "shinecrea-logo": "shinecrea-logo.svg",
+                    "sortir_dans_l_aube": "sortir_dans_l_aube.png"
                 );
 
                 @each $project, $image in $projects {
@@ -773,6 +792,31 @@ footer{
         }
     }
 }
+
+
+// animations //
+
+@keyframes lift-up {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .contact .special-btn {
+    display: inline-block; // ajuster selon votre besoin
+    transition: transform 0.5s ease;
+  }
+  
+  .contact .special-btn.animate {
+    animation: lift-up 0.6s ease forwards;
+  }
+  
 
 
 
